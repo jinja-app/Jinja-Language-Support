@@ -17,7 +17,29 @@
         "command": "jinja-language-support.helloWorld",
         "title": "Hello World"
       }
-    ]
+    ],
+    "languages": [
+      {
+        "id": "jinja",
+        "aliases": [
+          "Jinja",
+          "Jinja2"
+        ],
+        "extensions": [
+          ".j2",
+          ".jinja",
+          ".jinja2"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+  {
+    "language": "jinja",
+    "scopeName": "source.jinja",
+    "path": "./syntaxes/jinja.tmLanguage.json"
+  }
+]
   },
   "scripts": {
     "vscode:prepublish": "npm run package",
