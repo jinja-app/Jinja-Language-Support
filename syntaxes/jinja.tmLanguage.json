@@ -1,0 +1,20 @@
+{
+  "scopeName": "source.jinja",
+  "patterns": [
+    {
+      "name": "comment.block.jinja",
+      "begin": "\\{#",
+      "end": "#\\}"
+    },
+    {
+      "name": "meta.block.jinja",
+      "begin": "\\{%",
+      "end": "%\\}"
+    },
+    {
+      "name": "meta.expression.jinja",
+      "begin": "\\{\\{",
+      "end": "\\}\\}"
+    }
+  ]
+}
