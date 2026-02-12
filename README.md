@@ -1,6 +1,6 @@
 # jinja-language-support README
 
-This is the README for your extension "jinja-language-support". After writing up a brief description, we recommend including the following sections.
+This extension is intended to be used as a registry for the Jinja Language Support VSCode extension
 
 ## Features
 

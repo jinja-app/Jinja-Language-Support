@@ -9,15 +9,11 @@
   "categories": [
     "Other"
   ],
-  "activationEvents": [],
+  "activationEvents": [
+    "onLanguage:jinja"
+  ],
   "main": "./dist/extension.js",
   "contributes": {
-    "commands": [
-      {
-        "command": "jinja-language-support.helloWorld",
-        "title": "Hello World"
-      }
-    ],
     "languages": [
       {
         "id": "jinja",
@@ -34,12 +30,22 @@
       }
     ],
     "grammars": [
-  {
-    "language": "jinja",
-    "scopeName": "source.jinja",
-    "path": "./syntaxes/jinja.tmLanguage.json"
-  }
-]
+      {
+        "language": "jinja",
+        "scopeName": "source.jinja",
+        "path": "./syntaxes/jinja.json"
+      },
+      {
+        "language": "html",
+        "scopeName": "text.html.jinja",
+        "path": "./syntaxes/html.json"
+      },
+      {
+        "language": "yaml",
+        "scopeName": "text.yaml.jinja",
+        "path": "./syntaxes/yaml.json"
+      }
+    ]
   },
   "scripts": {
     "vscode:prepublish": "npm run package",
